@@ -1,5 +1,4 @@
-import { ActivatedRoute } from '@angular/router';
-import { name } from './../../../../node_modules/@leichtgewicht/ip-codec/types/index.d';
+import { ActivatedRoute, RouterOutlet } from '@angular/router';
 import { UsersService } from './../users.service';
 import {
   Component,
@@ -13,6 +12,7 @@ import {
 @Component({
   selector: 'app-user-tasks',
   standalone: true,
+  imports: [RouterOutlet],
   templateUrl: './user-tasks.component.html',
   styleUrl: './user-tasks.component.css',
 })
